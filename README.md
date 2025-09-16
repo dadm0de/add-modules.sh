@@ -3,13 +3,16 @@ Usage: Two Options
 1. You can download this script
 Fix permissions:
 > chmod +x add-modules.sh
+
 Then run with
 > ./add-modules.sh
    
 2. Copy and Paste the script code:
 > nano add-modules.sh 
+
 copy code, save & exit
 Fix permissions:
 > chmod +x add-modules.sh
+
 Run with:
 > /.add-modules.sh
