@@ -3,9 +3,10 @@
 ## Description
 This script adds AzerothCore modules via Git links, compiles them incrementally, copies `.conf.dist` files to the environment folder if compilation succeeds, removes failed modules, and lists successful and failed modules.
 
-## Usage Options
+## Usage Options: 2 Options
 
-### 1. Download the Script
+# Option 1:
+### Download the Script
 - Fix permissions:
   ```bash
   chmod +x add-modules.sh
@@ -15,7 +16,8 @@ This script adds AzerothCore modules via Git links, compiles them incrementally,
   ./add-modules.sh
   ```
 
-### 2. Copy and Paste the Script
+# Option 2:
+### Copy and Paste the Script
 - Edit:
   ```bash
   nano add-modules.sh
