@@ -103,9 +103,22 @@ done
 # ========================
 echo ""
 echo "===== MODULE COMPILE SUMMARY ====="
-
-# Always list successful modules (or empty)
 echo "✅ Successful modules: ${good[*]:-None}"
-
-# Always list failed modules (or empty)
 echo "❌ Failed modules: ${bad[*]:-None}"
+
+# ========================
+#       Full Compile Option
+# ========================
+echo ""
+read -p "Do you want to run a full compile now to ensure all modules are active? (y/N): " compile_choice
+compile_choice=${compile_choice,,} # convert to lowercase
+
+if [[ "$compile_choice" == "y" || "$compile_choice" == "yes" ]]; then
+    echo "=== Running full compile for all modules ==="
+    cd "$HOME/azerothcore-wotlk"
+    ./acore.sh compiler build
+    echo "✅ Full compile complete. All modules should now be active."
+else
+    echo "⚠️ You chose not to run a full compile."
+    echo "   Modules may not load until you run './acore.sh compiler build' manually."
+fi
