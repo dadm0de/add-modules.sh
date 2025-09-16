@@ -17,7 +17,7 @@ This script adds AzerothCore modules via Git links, compiles them incrementally,
   ```
 
 # Option 2:
-### Copy and Paste the Script
+### Copy and Paste the add-mnodule.sh code
 - Edit:
   ```bash
   nano add-modules.sh
